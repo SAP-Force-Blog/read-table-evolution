@@ -31,16 +31,3 @@ VALUE #( lt_itab[ text = 'Your text' ]-text DEFAULT '' ).
 ```
 This way you don't need, work area, field-symbol, try catch or subrc. it's a more simple, more faster and more security way to read table.
 
-
-
-
-
-
-In order to do this we need other codes associated, like:
-
-```ABAP
-DATA: lt_itab  TYPE STANDARD TABLE OF ty_string WITH HEADER LINE,
-      ls_line  LIKE LINE OF lt_itab,
-      lv_value TYPE string.
-```
-
